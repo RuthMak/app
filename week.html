@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week - Web Technology</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="bulletin.html">Bulletin</a>
+            <a href="week.html">Week</a>
+            <button class="menu-toggle" onclick="openMenu()">&#9776;</button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu">
+        <button class="close-btn" onclick="closeMenu()">&times;</button>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="bulletin.html">Bulletin</a>
+        <a href="week.html">Week</a>
+    </div>
+
+    <main>
+        <h2>Project Site Coming Soon</h2>
+    </main>
+
+    <script>
+        function openMenu() {
+            document.getElementById("mobile-menu").style.width = "250px";
+        }
+
+        function closeMenu() {
+            document.getElementById("mobile-menu").style.width = "0";
+        }
+    </script>
+
+</body>
+</html>

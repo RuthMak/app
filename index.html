@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology Education</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="bulletin.html">Bulletin</a>
+            <a href="week.html">Week</a>
+            <button class="menu-toggle" onclick="openMenu()">&#9776;</button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu">
+        <button class="close-btn" onclick="closeMenu()">&times;</button>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="bulletin.html">Bulletin</a>
+        <a href="week.html">Week</a>
+    </div>
+
+    <main>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/WEB_Technology.jpg" alt="Web Programming">
+        <h3>
+            "The fact that we're all connected, the fact that we've got this information space — does change the parameters. 
+            It changes the way people live and work. It changes things for good and for bad. 
+            But I think, in general, it's clear that most bad things come from misunderstanding, and communication is 
+            generally the way to resolve misunderstandings — and the Web's a form of communications — so it generally should be good."
+            – Tim Berners-Lee
+        </h3>
+    </main>
+
+    <script>
+        function openMenu() {
+            document.getElementById("mobile-menu").style.width = "250px";
+        }
+
+        function closeMenu() {
+            document.getElementById("mobile-menu").style.width = "0";
+        }
+    </script>
+
+</body>
+</html>

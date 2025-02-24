@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulletin - Web Technology</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="bulletin.html">Bulletin</a>
+            <a href="week.html">Week</a>
+            <button class="menu-toggle" onclick="openMenu()">&#9776;</button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu">
+        <button class="close-btn" onclick="closeMenu()">&times;</button>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="bulletin.html">Bulletin</a>
+        <a href="week.html">Week</a>
+    </div>
+
+    <main>
+        <h2>Latest Bulletins</h2>
+        <div class="bulletin-container">
+            <div class="card">
+                <h3>AI in Web Development</h3>
+                <p>Artificial Intelligence is transforming web development with automation and predictive capabilities.</p>
+            </div>
+            <div class="card">
+                <h3>Progressive Web Apps</h3>
+                <p>PWA technology allows websites to function like mobile apps, improving user experience.</p>
+            </div>
+            <div class="card">
+                <h3>User Experience Enhancement</h3>
+                <p>DAI algorithms in tools collects from the users to customize website content, its design and how the user can interact with them.</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function openMenu() {
+            document.getElementById("mobile-menu").style.width = "250px";
+        }
+
+        function closeMenu() {
+            document.getElementById("mobile-menu").style.width = "0";
+        }
+    </script>
+
+</body>
+</html>
